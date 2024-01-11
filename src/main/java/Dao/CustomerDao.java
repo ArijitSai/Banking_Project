@@ -33,4 +33,16 @@ List<Customer> list=entityManager.createQuery("select x from Customer x where Mo
 return list;
 }
 
+
+public Customer login(int customerid) {
+	Customer customer=entityManager.find(Customer.class, customerid);
+	return customer;
+}
+public void update(Customer customer) {
+	entityTransaction.begin();
+	entityManager.merge(customer);
+	entityTransaction.commit();
+	
+	
+}
 }

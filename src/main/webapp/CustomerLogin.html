@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<body>
+<div style="box-sizing: border-box;padding: 0px;padding: 0px;height: 713px;width: auto;border: 1px solid black;background-image: url('https://i.pinimg.com/originals/15/3a/45/153a4535df6cf2d2b106a558b750c486.jpg');background-repeat: no-repeat;background-size: cover;">
+<h1 style="padding-top: 150px;padding-left: 470px;color: blue;">WELCOME TO CUSTOMER LOGIN PAGE</h1>
+
+<div style="height: 250px;width: 430px;border: 2px solid black;margin-left: 550px;margin-top: 50px">
+<form action="CustomerLogin"><br>
+<h3 style="margin-left: 20px">CusId:  &nbsp;&nbsp;&nbsp;&nbsp;  <input type="tel" name="custid" placeholder="  Enter Your Customer Id" style="height: 30px;width: 300px"></h3>
+<h3 style="margin-left: 20px">Password:   <input type="password" name="pwd" placeholder="  Enter Your Password" style="height: 30px;width: 300px"></h3>
+
+<div style="display: flex; margin-top: 40px"><div style="margin-left: 20px;"><button onclick="askConfirmation()"type="submit" style="width: 150px"><h3 >Login</h3></button></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <div><button type="reset" style="width: 150px"><h3>Cancel</h3></button></div></div>
+
+</form>
+</div>
+</div>
+<script>
+        function askConfirmation() {
+            // Display a confirm dialog
+            var result = window.confirm("LOGIN SUCESSFUL");
+
+            // // Check the user's choice
+            // if (result) {
+            //     alert("You clicked OK. Proceeding with the action.");
+            // } else {
+            //     alert("You clicked Cancel. Action canceled.");
+            // }
+        }
+    </script>
+</body>
+</html>

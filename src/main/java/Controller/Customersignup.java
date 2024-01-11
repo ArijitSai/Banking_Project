@@ -52,11 +52,15 @@ public class Customersignup extends HttpServlet {
 			if(customer2.getGender().equals("female"))
 			{
 				resp.getWriter().print("<h1>Hello Madam</h1>");
+				
+
 			}
 			else {
 				resp.getWriter().print("<h1>Hello Sir</h1>");
 			}
 			resp.getWriter().print("<h1>Account has been creeated sucessfully your customer id is:"+customer2.getCid()+"</h1>");
+			req.getRequestDispatcher("CustomerLogin.html").include(req, resp);
+			
 		} 
 		
 	

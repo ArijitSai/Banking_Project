@@ -1,10 +1,12 @@
 package Dto;
 
 import java.sql.Date;
+import java.util.List;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 
 import org.hibernate.annotations.Entity;
@@ -30,6 +32,9 @@ public class Customer {
 	String Gender;
 	
 	Date date;
+	
+	@OneToMany
+	List<Bank_account>bankaccounts;
 
 	public int getCid() {
 		return cid;
@@ -85,5 +90,13 @@ public class Customer {
 
 	public void setDate(Date date) {
 		this.date = date;
+	}
+
+	public List<Bank_account> getBankaccounts() {
+		return bankaccounts;
+	}
+
+	public void setBankaccounts(List<Bank_account> bankaccounts) {
+		this.bankaccounts = bankaccounts;
 	}
 }
